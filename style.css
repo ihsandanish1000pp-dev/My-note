@@ -364,3 +364,47 @@ body {
 .save-btn:hover {
     background: #5b4fd1;
 }
+
+
+
+
+.notes-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.note {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.note:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.note h2 {
+    font-size: 21px;
+    color: #222;
+    margin-bottom: 12px;
+}
+
+.note p {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .notes-container {
+        grid-template-columns: 1fr;
+    }
+}
