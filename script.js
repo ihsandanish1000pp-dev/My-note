@@ -105,5 +105,15 @@ FavaBtn.addEventListener("click", function () {
   let favoriteNotes = note.filter(function (item) {
     return item.Favorite === true;
   });
-  console.log(favoriteNotes);
+
+  Notecontainer.innerHTML = favoriteNotes
+    .map(function (item) {
+      return `
+      <div class="note">
+        <h2>${item.title}</h2>
+        <p>${item.Discription}</p>
+      </div>
+    `;
+    })
+    .join("");
 });
