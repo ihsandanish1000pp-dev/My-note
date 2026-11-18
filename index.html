@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Notes App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app-container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h2 class="logo">My Notes</h2>
+
+            <button class="add-note-btn">+ Add New Note</button>
+
+            <div class="sidebar-menu">
+
+                <h4>MENU</h4>
+
+                <ul>
+                    <li class="active">All Notes</li>
+                    <li>⭐ Favorites</li>
+                </ul>
+
+                <h4>CATEGORIES</h4>
+
+                <ul>
+                    <li>💼 Work</li>
+                    <li>👤 Personal</li>
+                    <li>📚 Study</li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+
+
+
+            <!-- Add New Note Modal -->
+            <div class="modal-overlay">
+
+                <div class="note-modal">
+
+                    <div class="modal-header">
+                        <h2>Create New Note</h2>
+                        <button class="close-btn">&times;</button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <label for="note-title">Note Title</label>
+                        <input type="text" id="note-title" placeholder="Enter note title...">
+
+                        <label for="note-description">Description</label>
+                        <textarea id="note-description" placeholder="Write your note here..." rows="5"></textarea>
+
+                        <label for="note-category">Select Category</label>
+                        <select id="note-category">
+                            <option value="">Choose category</option>
+                            <option value="Work">Work</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Study">Study</option>
+                        </select>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button class="cancel-btn">Cancel</button>
+                        <button class="save-btn">Sav e Note</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+
+            <header class="top-header">
+
+                <div>
+                    <h1>My Notes</h1>
+                    <p>Manage your thoughts and ideas</p>
+                </div>
+
+                <input type="text" class="search-input" placeholder="Search your notes...">
+
+            </header>
+
+
+            <!-- Notes Section -->
+            <section class="notes-section">
+
+                <div class="section-heading">
+                    <h2>All Notes</h2>
+                    <span>3 Notes</span>
+                </div>
+
+
+                <div class="notes-container">
+
+                    <div class="note-card">
+                        <div class="note-top">
+                            <span>STUDY</span>
+                            <span>⭐</span>
+                        </div>
+
+                        <h3>JavaScript Learning</h3>
+
+                        <p>
+                            Practice JavaScript concepts including
+                            arrays, objects, functions and DOM.
+                        </p>
+
+                        <div class="note-footer">
+                            <span>Today</span>
+                            <div>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="note-card">
+                        <div class="note-top">
+                            <span>WORK</span>
+                            <span>☆</span>
+                        </div>
+
+                        <h3>Project Ideas</h3>
+
+                        <p>
+                            Build professional websites and improve
+                            frontend development skills.
+                        </p>
+
+                        <div class="note-footer">
+                            <span>Yesterday</span>
+                            <div>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="note-card">
+                        <div class="note-top">
+                            <span>PERSONAL</span>
+                            <span>⭐</span>
+                        </div>
+
+                        <h3>Daily Tasks</h3>
+
+                        <p>
+                            Complete daily tasks and organize
+                            important activities.
+                        </p>
+
+                        <div class="note-footer">
+                            <span>Nov 15</span>
+                            <div>
+                                <button>Edit</button>
+                                <button>Delete</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
