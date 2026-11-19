@@ -117,3 +117,15 @@ FavaBtn.addEventListener("click", function () {
     })
     .join("");
 });
+
+let workBtn = document.querySelector(".work-btn");
+let worksection = document.querySelector(".work-section");
+workBtn.addEventListener("click", function () {
+  worksection.style.display = "block";
+});
+
+let personalBtn = document.querySelector(".Personal-btn");
+let personalWork = document.querySelector(".personal-work");
+personalBtn.addEventListener("click", function () {
+  personalWork.style.display = "block";
+});
